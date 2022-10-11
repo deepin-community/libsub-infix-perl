@@ -1,0 +1,24 @@
+Source: libsub-infix-perl
+Section: perl
+Priority: optional
+Build-Depends: @cdbs@
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Jonas Smedegaard <dr@jones.dk>
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libsub-infix-perl
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libsub-infix-perl.git
+Homepage: https://metacpan.org/release/Sub-Infix
+
+Package: libsub-infix-perl
+Architecture: all
+Depends: ${cdbs:Depends},
+ ${misc:Depends},
+ ${perl:Depends}
+Recommends: ${cdbs:Recommends}
+Suggests: ${cdbs:Suggests}
+Description: create a fake infix operator
+ Sub::Infix creates fake infix operators using overloading. It doesn't
+ use source filters, or Devel::Declare, or any of that magic. (Though
+ Devel::Declare isn't magic enough to define infix operators anyway; I
+ know; I've tried.) It's pure Perl, has no non-core dependencies, and
+ runs on Perl 5.6.
